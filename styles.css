@@ -1,0 +1,299 @@
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  padding: 100px 20px 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  z-index: 1;
+}
+
+h1 {
+  margin-top: 0;
+  display: inline-block;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+#navButton {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  margin-right: 80px
+}
+
+.menuIcon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuBar {
+  width: 100%;
+  height: 8px;
+  background-color: #ccc;
+  margin: 4px 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.menuBar.highlight {
+  background-color: #fff;
+}
+
+.cross .menuBar {
+  background-color: white;
+}
+
+#navIcon i {
+  font-size: 20px;
+  color: #888;
+}
+
+#navIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 44px;
+}
+
+#navIcon.cross .menuBar {
+  background-color: #888;
+}
+
+#navIcon.cross .menuBar:nth-child(2) {
+  opacity: 0;
+}
+
+#navIcon.cross .menuBar:first-child {
+  transform: rotate(45deg) translate(13.5px, 6px);
+  height: 12px;
+}
+
+#navIcon.cross .menuBar:last-child {
+  transform: rotate(-45deg) translate(13.5px, -6px);
+  height: 12px;
+}
+
+#navMenu {
+  background-color: #A9A9A9;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  width: 20%;
+  z-index: 999;
+  font-size: 24px;
+  top: 120px;
+  display: none
+}
+
+#navMenu.active {
+  display: block;
+}
+
+#navMenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+#navMenu li {
+  padding: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#navMenu li:hover {
+  background-color: #555;
+}
+
+#navMenu ul li {
+  text-align: right;
+  padding: 5px 0;
+}
+
+#navMenu ul li a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+#navButton:hover .menuBar {
+  background-color: #999;
+}
+
+#navButton.cross {
+  background-color: none;
+}
+
+#navButton.cross .menuBar {
+  background-color: #fff;
+}
+
+#navButton.highlight {
+  background-color: #555;
+}
+
+#navMenu.show {
+  display: block;
+  width: 150px;
+  top: calc(100% + 5px);
+}
+
+main {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+section {
+  padding-top: 20px;
+  margin-top: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+section div {
+  border-top: 2px solid black;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    font-size: 12px;
+	overflow-x: hidden;
+  }
+  
+  html {
+	overflow-x: hidden;
+  }	
+  
+  main {
+    padding: 0;
+  }
+  
+  header {
+    text-align: left;
+  }
+
+  section div {
+    padding-right: 20px;
+  }
+  
+  header h1 {
+    font-size: 30px;
+	text-align: left;
+	left: 0;
+	display: active;
+
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+  
+  #navButton {
+	display: none;
+  }
+  
+  main section div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #contact-form iframe {
+      width: 300px;
+	  height: 1200px;
+    }
+}
+
+@media (max-width: 400px) {
+   body {
+    font-size: 12px;
+	overflow-x: hidden;
+  }
+  
+  html {
+	overflow-x: hidden;
+  }	
+  
+  main {
+    padding: 0;
+  }
+  
+  header {
+    text-align: left;
+  }
+
+
+  #navButton {
+	display: none;
+  }
+
+  section div {
+    padding-right: 20px;
+  }
+  
+  header h1 {
+    font-size: 25px;
+	text-align: left;
+	left: 0;
+	display: active;
+
+  }
+
+  header h2 {
+    font-size: 12px;
+  }
+  
+  
+  main section div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #contact-form iframe {
+      width: 200px;
+	  height: 1000px;
+  }
+}
