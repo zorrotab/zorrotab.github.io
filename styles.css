@@ -207,7 +207,7 @@ footer {
 /* Design for smaller screens */
 @media (max-width: 900px) {
   body {
-    font-size: 40px;
+    font-size: 20px;
 	overflow-x: hidden;
   }
   
@@ -228,7 +228,7 @@ footer {
   }
   
   header h1 {
-    font-size: 80px;
+    font-size: 45px;
 	text-align: left;
 	left: 0;
 	display: active;
@@ -236,7 +236,7 @@ footer {
   }
 
   header h2 {
-    font-size: 36px;
+    font-size: 28px;
   }
   
   #navButton {
@@ -244,7 +244,7 @@ footer {
   }
   
   main section h3 {
-	 font-size: 60px; 
+	 font-size: 35px; 
   }
   
   main section div {
@@ -254,12 +254,12 @@ footer {
   }
   
   #contact-form iframe {
-      width: 650px;
-	  height: 1400px;
+      width: 550px;
+	  height: 1300px;
     }
 	
   footer {
-      font-size: 40px;
+      font-size: 20px;
 
 }
 }
@@ -361,7 +361,7 @@ footer {
   }
   
   #contact-form iframe {
-      width: 200px;
-	  height: 1000px;
+    width: 200px;
+	height: 1000px;
   }
 }
