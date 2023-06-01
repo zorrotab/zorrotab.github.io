@@ -205,10 +205,71 @@ footer {
 
 
 /* Design for smaller screens */
+@media (max-width: 1300px) {	
+  body {
+    font-size: 30px;
+	overflow-x: hidden;
+	padding: 100px 60px 0;
+  }
+  
+  html {
+	overflow-x: hidden;
+  }	
+  
+  main {
+    padding: 0;
+  }
+  
+  header {
+    text-align: left;
+  }
+
+  section div {
+    padding-right: 20px;
+  }
+  
+  header h1 {
+    font-size: 65px;
+	text-align: left;
+	left: 0;
+	display: active;
+
+  }
+
+  header h2 {
+    font-size: 38px;
+  }
+  
+  #navButton {
+	display: none;
+  }
+  
+  main section h3 {
+	 font-size: 45px; 
+  }
+  
+  main section div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #contact-form iframe {
+      width: 850px;
+	  height: 1300px;
+    }
+	
+  footer {
+      font-size: 30px;
+
+}
+}
+
 @media (max-width: 900px) {
   body {
     font-size: 20px;
 	overflow-x: hidden;
+	padding: 100px 40px 0;
   }
   
   html {
